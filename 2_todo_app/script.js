@@ -9,8 +9,15 @@ function addTodo(){
 }
 
 function displayTodo(){
-    document.querySelector("#todo-items").innerText="";
+    let containerElement=document.querySelector(".item-container");
+    let newHtml="";
     for(let i=0;i<todoList.length;i++){
-        document.querySelector("#todo-items").innerText=document.querySelector("#todo-items").innerText+"\n"+todoList[i];
+        newHtml+=`
+            <div>
+            <span>${todoList[i]}</span>
+            <button onclick="todoList.splice(${i},1); displayTodo();">Delete</button>
+            </div>
+            `  
     }
+    containerElement.innerHTML=newHtml;
 }
