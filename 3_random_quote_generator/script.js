@@ -53,3 +53,10 @@ let quote_list = [
     ["The purpose of our lives is to be happy.", "Dalai Lama"]
   ];
   
+showQuote();
+function showQuote(){
+    let random=Math.floor(Math.random()*quote_list.length)
+    // let index=quote_list[random]
+    document.querySelector('#quote').innerHTML=quote_list[random][0]
+    document.querySelector('#author').innerHTML=quote_list[random][1]
+}
