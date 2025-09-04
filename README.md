@@ -17,3 +17,8 @@ This is a simple random quote generator project built with HTML, CSS, and JavaSc
 ## Project Completion
 ✅ Project Completed on: 2025-09-04
 
+# 4_Bat Ball Stump Project
+This is a simple random quote generator project built with HTML, CSS, and JavaScript.
+## Project Completion
+✅ Project Completed on: 2025-09-04
+
